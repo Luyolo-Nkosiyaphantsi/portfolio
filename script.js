@@ -1,7 +1,7 @@
 // script.js
 // Professional frontend logic for portfolio
 
-const backendURL = "http://localhost:3000"; // Change to your deployed backend URL when online
+const backendURL = "https://portfolio-zoxu.onrender.com"; // Change to your deployed backend URL when online
 
 // Load projects dynamically
 async function loadProjects() {
