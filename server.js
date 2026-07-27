@@ -16,19 +16,19 @@ const projects = [
     title: "CRUD Application",
     description: "A full-stack web application implementing Create, Read, Update, and Delete operations for managing records in a database.",
     tech: "HTML, CSS, JavaScript, PHP, MySQL",
-    year: "2024 – Present"
+    year: "2026"
   },
   {
     title: "Personal Portfolio Website",
     description: "A responsive personal portfolio website showcasing projects, skills, and contact information for potential employers.",
     tech: "HTML, CSS, JavaScript",
-    year: "2024 – Present"
+    year: "2026"
   },
   {
-    title: "E-Commerce Website",
-    description: "A simulated online shopping platform featuring product listings, a shopping cart, and a checkout process.",
-    tech: "HTML, CSS, JavaScript, PHP, MySQL",
-    year: "2025 – Present"
+    title: "Vehicle Rental System Web",
+    description: "A system designed to facilitate and modernize corporate vehicle rental and return procedures.",
+    tech: "HTML, ASP.Net, MySQL",
+    year: "2025"
   },
   {
     title: "Weather App",
