@@ -61,5 +61,76 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
   }
 });
 
+// =====================
+// PRELOADER (like a pro)
+// =====================
+function runPreloader() {
+  const preloader = document.getElementById('preloader');
+  const fill = document.getElementById('preloaderFill');
+  const percentLabel = document.getElementById('preloaderPercent');
+  if (!preloader || !fill || !percentLabel) return;
+
+  let progress = 0;
+  const startTime = performance.now();
+  const MIN_DURATION_MS = 1400; // feels intentional, not a flash
+
+  const pageReady = new Promise(resolve => {
+    if (document.readyState === 'complete') resolve();
+    else window.addEventListener('load', resolve, { once: true });
+  });
+  let readyFlag = false;
+  pageReady.then(() => { readyFlag = true; });
+
+  const tick = () => {
+    const elapsed = performance.now() - startTime;
+    const minElapsed = elapsed >= MIN_DURATION_MS;
+    // Ease toward 90% quickly, then wait for real page-load + min duration to finish
+    const target = (readyFlag && minElapsed) ? 100 : 90;
+    progress += (target - progress) * 0.12 + 0.4;
+    if (progress > target) progress = target;
+
+    fill.style.width = progress.toFixed(0) + '%';
+    percentLabel.textContent = Math.floor(progress) + '%';
+
+    if (progress >= 100) {
+      finishPreloader(preloader);
+      return;
+    }
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+function finishPreloader(preloader) {
+  preloader.classList.add('preloader-hide');
+  // Kick off the bars-wipe + navbar/hero reveal sequence
+  document.body.classList.add('reveal');
+  setTimeout(() => {
+    preloader.remove();
+  }, 650);
+}
+
+// =====================
+// DARK / LIGHT THEME TOGGLE
+// =====================
+function initThemeToggle() {
+  const toggle = document.getElementById('themeToggle');
+  if (!toggle) return;
+
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('portfolio-theme', theme);
+  };
+
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    applyTheme(current === 'light' ? 'dark' : 'light');
+  });
+}
+
 // Initialize
-document.addEventListener('DOMContentLoaded', loadProjects);
+document.addEventListener('DOMContentLoaded', () => {
+  loadProjects();
+  initThemeToggle();
+  runPreloader();
+});
