@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luyolo's IT Student Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/923b74a404.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Apply saved theme before paint, to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('portfolio-theme');
+      var theme = saved === 'light' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
 
+  <!-- Preloader (shown first, on every load) -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span>L</span><span>N</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-fill" id="preloaderFill"></div>
+      </div>
+      <div class="preloader-percent" id="preloaderPercent">0%</div>
+    </div>
+  </div>
+
+  <!-- Bars Animation (like Vincent's example) -->
+  <div class="bars-animation">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="logo">Portfolio.</a>
+    <ul>
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode">
+      <i class="fa-solid fa-moon moon-icon"></i>
+      <i class="fa-solid fa-sun sun-icon"></i>
+    </button>
+  </nav>
+
+  <!-- Hero / Home Section -->
+  <section class="home" id="home">
+    <div class="home-info">
+      <h1>Luyolo Thando Nkosiyaphantsi</h1>
+      <h2>I'm a
+        <span style="--i:4;" data-text="Fullstack Developer">Fullstack Developer</span>
+        <span style="--i:3;" data-text="Frontend Developer">Frontend Developer</span>
+        <span style="--i:2;" data-text="Backend Developer">Backend Developer</span>
+        <span style="--i:1;" data-text="IT Student">IT Student</span>
+      </h2>
+      <p>A passionate IT student at North-West University specializing in fullstack web development,
+        cybersecurity, and cloud computing. I build user-friendly applications that make a difference.</p>
+      <div class="btn-sci">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="cv.pdf" target="_blank" rel="noopener" class="btn btn-outline" download>View CV</a>
+        <div class="sci">
+          <a href="https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Luyolo-Nkosiyaphantsi" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com/luyolo_jili" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <!-- Replace with your actual photo -->
+          <img src="icons/rofile.jpeg" alt="Luyolo Thando Nkosiyaphantsi">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        My name is <strong>Luyolo Thando Nkosiyaphantsi</strong>, currently studying Information Technology at
+        <strong>North-West University</strong>. I have a strong interest in web development,
+        software engineering, and creating user‑friendly applications.
+      </p>
+      <p>
+        I am proficient in <strong>HTML, CSS, JavaScript, Node.js, and Express</strong>,
+        and I am expanding my knowledge in <strong>React</strong> and <strong>MongoDB</strong>.
+      </p>
+      <p>
+        Beyond coding, I am interested in <strong>cybersecurity</strong>, <strong>cloud computing</strong>,
+        and exploring how technology can improve everyday life. I thrive in collaborative environments
+        and enjoy working on projects that challenge me to grow.
+      </p>
+      <p>
+        My goal is to become a <strong>fullstack developer</strong> and contribute to impactful projects
+        that make a difference in the tech industry.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="fa-solid fa-code skill-icon"></i>
+          <h3>Frontend Development</h3>
+          <p>HTML, CSS, JavaScript, React</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;">85%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fa-solid fa-server skill-icon"></i>
+          <h3>Backend Development</h3>
+          <p>Node.js, Express, REST APIs, PHP</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;">75%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fa-solid fa-database skill-icon"></i>
+          <h3>Databases</h3>
+          <p>MySQL, PostgreSQL, MongoDB</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;">70%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fa-solid fa-cloud skill-icon"></i>
+          <h3>Cloud & AI (Microsoft Azure)</h3>
+          <p>Azure ML, Azure AI, Data Science, Power BI</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 72%;">72%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fa-solid fa-shield-halved skill-icon"></i>
+          <h3>Networking & Cybersecurity</h3>
+          <p>Cisco Packet Tracer, Network Config, Cybersecurity Basics</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 68%;">68%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fa-solid fa-code-branch skill-icon"></i>
+          <h3>Tools & Version Control</h3>
+          <p>Git, GitHub, Docker, VS Code</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;">75%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Sub-section -->
+      <h2 class="cert-heading">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <i class="fa-brands fa-microsoft cert-icon"></i>
+          <div>
+            <h4>Azure AI Engineer Associate</h4>
+            <span>NEMISA / Microsoft &mdash; May 2026</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <i class="fa-brands fa-microsoft cert-icon"></i>
+          <div>
+            <h4>Power BI Data Analyst Associate</h4>
+            <span>NEMISA / Microsoft &mdash; May 2026</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <i class="fa-brands fa-microsoft cert-icon"></i>
+          <div>
+            <h4>Azure Data Scientist Associate</h4>
+            <span>NEMISA / Microsoft &mdash; Mar 2026</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-network-wired cert-icon"></i>
+          <div>
+            <h4>Data Analytics Essentials</h4>
+            <span>Cisco Networking Academy &mdash; Apr 2026</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-network-wired cert-icon"></i>
+          <div>
+            <h4>Getting Started with Cisco Packet Tracer</h4>
+            <span>Cisco Networking Academy &mdash; Mar 2026</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-shield-halved cert-icon"></i>
+          <div>
+            <h4>Introduction to Cybersecurity</h4>
+            <span>Cisco Networking Academy &mdash; Apr 2025</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-layer-group cert-icon"></i>
+          <div>
+            <h4>Certificate in Full Stack Development</h4>
+            <span>FNB App Academy / ITvarsity &mdash; Jul 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div id="project-list" class="project-grid">
+        <!-- Projects will be loaded dynamically via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© nkosiyaphantsiluyolo@gmail.com | Built with ❤️ using HTML, CSS & JS</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/Luyolo Thando NKOSIYAPHANTSI" target="_blank">
+          <img src="icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Luyolo-Nkosiyaphantsi" target="_blank">
+          <img src="icons/github.svg" alt="GitHub">
+        </a>
+        <a href="https://instagram.com/luyolo_jili" target="_blank">
+          <img src="icons/Instagram.svg" alt="lnstagram">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
