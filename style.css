@@ -255,7 +255,7 @@ body.reveal .navbar {
   opacity: 0;
   animation: show-content 1.5s linear forwards;
   animation-delay: 2.3s;
-  animation-play-state: paused;
+  
 }
 body.reveal .home {
   animation-play-state: running;
