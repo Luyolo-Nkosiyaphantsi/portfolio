@@ -1,7 +1,7 @@
 // script.js
 // Professional frontend logic for portfolio
 
-const backendURL = "https://portfolio-zoxu.onrender.com"; // Change to your deployed backend URL when online
+const backendURL = "https://portfolio-zoxu.onrender.com";
 
 // Load projects dynamically
 async function loadProjects() {
@@ -62,7 +62,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
 });
 
 // =====================
-// PRELOADER (like a pro)
+// PRELOADER
 // =====================
 function runPreloader() {
   const preloader = document.getElementById('preloader');
