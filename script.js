@@ -1,5 +1,5 @@
 // script.js
-// Professional frontend logic for portfolio
+// frontend logic for portfolio
 
 const backendURL = "https://portfolio-zoxu.onrender.com";
 
