@@ -17,7 +17,7 @@ const projects = [
     description: "A full-stack web application implementing Create, Read, Update, and Delete operations for managing records in a database.",
     tech: "HTML, CSS, JavaScript, PHP, MySQL",
     year: "2026",
-    github: "https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi/students-records-crud"
+    github: "https://github.com/Luyolo-Nkosiyaphantsi/students-records-crud"
   },
   {
     title: "Personal Portfolio Website",
