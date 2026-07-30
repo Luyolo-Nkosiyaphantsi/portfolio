@@ -16,25 +16,29 @@ const projects = [
     title: "CRUD Application",
     description: "A full-stack web application implementing Create, Read, Update, and Delete operations for managing records in a database.",
     tech: "HTML, CSS, JavaScript, PHP, MySQL",
-    year: "2026"
+    year: "2026",
+    github: "https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi/students-records-crud"
   },
   {
     title: "Personal Portfolio Website",
     description: "A responsive personal portfolio website showcasing projects, skills, and contact information for potential employers.",
     tech: "HTML, CSS, JavaScript",
-    year: "2026"
+    year: "2026",
+    github: "https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi/portfolio"
   },
   {
     title: "Vehicle Rental System Web",
     description: "A system designed to facilitate and modernize corporate vehicle rental and return procedures.",
     tech: "HTML, ASP.Net, MySQL",
-    year: "2025"
+    year: "2025",
+    github: "https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi/VehicleRentalSystemProject"
   },
   {
     title: "Weather App",
     description: "A web application that fetches and displays real-time weather data for any city using a third-party weather API.",
     tech: "HTML, CSS, JavaScript, OpenWeatherMap API",
-    year: "2026"
+    year: "2026",
+    github: "https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi/weather-app"
   },
   {
     title: "TradeRoute Logistics System",
