@@ -23,6 +23,12 @@ async function loadProjects() {
           <span class="project-tech"><i class="fa-solid fa-code"></i> ${p.tech}</span>
           <span class="project-year"><i class="fa-solid fa-calendar"></i> ${p.year}</span>
         </div>
+
+        <div class="project-links">
+          <a href="${p.github}" target="_blank">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
       `;
       list.appendChild(card);
     });
