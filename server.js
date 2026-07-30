@@ -24,27 +24,28 @@ const projects = [
     description: "A responsive personal portfolio website showcasing projects, skills, and contact information for potential employers.",
     tech: "HTML, CSS, JavaScript",
     year: "2026",
-    github: "https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi/portfolio"
+    github: "https://github.com/Luyolo-Nkosiyaphantsi/portfolio"
   },
   {
     title: "Vehicle Rental System Web",
     description: "A system designed to facilitate and modernize corporate vehicle rental and return procedures.",
     tech: "HTML, ASP.Net, MySQL",
     year: "2025",
-    github: "https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi/VehicleRentalSystemProject"
+    github: "https://github.com/Luyolo-Nkosiyaphantsi/VehicleRentalSystemProject"
   },
   {
     title: "Weather App",
     description: "A web application that fetches and displays real-time weather data for any city using a third-party weather API.",
     tech: "HTML, CSS, JavaScript, OpenWeatherMap API",
     year: "2026",
-    github: "https://www.linkedin.com/in/luyolo-thando-nkosiyaphantsi/weather-app"
+    github: "https://github.com/Luyolo-Nkosiyaphantsi/weather-app"
   },
   {
     title: "TradeRoute Logistics System",
     description: "A logistics management system designed to track shipments, manage routes, and streamline delivery operations.",
     tech: "Python, MySQL, HTML, CSS, JavaScript",
-    year: "2026"
+    year: "2026",
+    github: "https://github.com/Luyolo-Nkosiyaphantsi/traderoute-logistics"
   }
 ];
 
