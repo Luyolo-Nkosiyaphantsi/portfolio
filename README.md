@@ -15,7 +15,7 @@
 
 ### 👋 About Me
 
-I'm an **Information Technology student at North-West University**, specializing in **fullstack web development**, **cybersecurity**, and **cloud computing**. I care about writing clean, user-friendly code and I'm currently deepening my skills in **React** and **MongoDB** while stacking up Microsoft Azure certifications.
+I'm an **Information Technology student at North-West University**, specializing in **software developer**, **data analytics**, **fullstack web development**, **cybersecurity**, and **cloud computing**. I care about writing clean, user-friendly code and I'm currently deepening my skills in **React** and **MongoDB** while stacking up Microsoft Azure certifications.
 
 - 🎓 Studying IT at North-West University
 - 💻 Building fullstack apps with **HTML, CSS, JavaScript, Node.js, Express**
@@ -75,14 +75,10 @@ I'm an **Information Technology student at North-West University**, specializing
 
 ### 📌 Featured Projects
 
-<!--
-  Replace these three blocks with your real pinned repos.
-  Format: [![Repo Name](https://github-readme-stats.vercel.app/api/pin/?username=Luyolo-Nkosiyaphantsi&repo=REPO_NAME&theme=dark)](https://github.com/Luyolo-Nkosiyaphantsi/REPO_NAME)
--->
+
 
 [![Portfolio Website](https://github-readme-stats.vercel.app/api/pin/?username=Luyolo-Nkosiyaphantsi&repo=portfolio&theme=dark)](https://github.com/Luyolo-Nkosiyaphantsi/portfolio)
 
-> 💡 **Tip:** Go to your GitHub profile → click **"Customize your pins"** → choose your best 4–6 repos. Pinned repos are the first thing recruiters see, so pick ones with a clear README, a live demo link, and a real problem they solve.
 
 ---
 
@@ -101,7 +97,7 @@ I'm an **Information Technology student at North-West University**, specializing
 
 <div align="center">
 
-*"My goal is to become a fullstack developer and contribute to impactful projects that make a difference in the tech industry."*
+*"My goal is to become a software developer and contribute to impactful projects that make a difference in the tech industry."*
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Luyolo-Nkosiyaphantsi&color=d4af37&style=flat-square&label=Profile+Views)
 
