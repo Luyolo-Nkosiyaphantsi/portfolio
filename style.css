@@ -54,7 +54,7 @@ a {
 }
 
 /* =====================
-   PRELOADER (shown first, like a pro)
+   PRELOADER
    ===================== */
 .preloader {
   position: fixed;
@@ -120,7 +120,7 @@ a {
 }
 
 /* =====================
-   BARS ANIMATION (intro wipe)
+   BARS ANIMATION
    ===================== */
 .bars-animation {
   position: fixed;
@@ -331,7 +331,7 @@ body.reveal .home {
   box-shadow: none;
 }
 
-/* Outline button variant (e.g. View CV) */
+/* Outline button variant (View CV) */
 .btn-outline {
   background: transparent;
   color: var(--primary);
@@ -627,7 +627,7 @@ footer {
   color: var(--text-muted);
 }
 
-/* Project meta (tech + year tags) */
+/* Project meta */
 .project-meta {
   margin-top: 0.8rem;
   display: flex;
