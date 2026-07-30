@@ -627,6 +627,33 @@ footer {
   color: var(--text-muted);
 }
 
+.cert-card div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  width: fit-content;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cert-btn:hover {
+  background: #0056d6;
+  transform: translateY(-2px);
+}
+
+.cert-btn i {
+  margin-right: 6px;
+}
 /* Project meta */
 .project-meta {
   margin-top: 0.8rem;
